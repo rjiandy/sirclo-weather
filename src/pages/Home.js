@@ -70,6 +70,7 @@ export default class HomePage extends Component {
       } else {
         this.setState({
           error: 'No Data Found',
+          weatherData: null,
         })
       }
     });

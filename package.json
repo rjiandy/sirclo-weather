@@ -16,7 +16,6 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "jest": "^23.6.0",
     "react-test-renderer": "^16.5.2"
   }
 }

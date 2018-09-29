@@ -41,8 +41,8 @@ export default function WeatherTable(props) {
               data.map(({ date, diff, temp }) => (
                 <TableRow>
                   <TableCell>{date}</TableCell>
-                  <TableCell>{temp}</TableCell>
-                  <TableCell>{diff}</TableCell>
+                  <TableCell>{temp}C</TableCell>
+                  <TableCell>{diff}C</TableCell>
                 </TableRow>
               )) : null
           }
@@ -52,8 +52,8 @@ export default function WeatherTable(props) {
             <TableFooter>
               <TableRow>
                 <TableCell>Rata-rata</TableCell>
-                <TableCell>{(total.temp / data.length).toFixed(2)}</TableCell>
-                <TableCell>{(total.diff / data.length).toFixed(2)}</TableCell>
+                <TableCell>{(total.temp / data.length).toFixed(2)}C</TableCell>
+                <TableCell>{(total.diff / data.length).toFixed(2)}C</TableCell>
               </TableRow>
             </TableFooter>
           ) : null
