@@ -13,8 +13,6 @@ export default function groupTemperatureByDay(weatherList) {
       }
     }
     let dailyWeather = [];
-    let totalTempAvg = 0;
-    let totalDiffAvg = 0;
     for (const [key, value] of groupedWeatherByDate) {
       let tempAvg = 0;
       let tempMinAvg = 0;
